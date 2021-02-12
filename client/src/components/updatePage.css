@@ -1,0 +1,100 @@
+* {
+    text-align: center;  
+}
+
+.content-wrapper {
+    width: 100%;
+    margin: 0px;
+}
+
+.content-wrapper img {
+    width: 100%;
+    opacity: 75%;
+    margin-top: -10px;
+}
+
+.text-wrapper {
+    position: relative;
+    margin-top: -810px;
+}
+
+.UpdateHeading {
+    width: 800px;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(179, 7, 44);
+    margin-top: -250px;
+    margin-right: -10px;
+    margin-bottom: 60px;
+}
+
+.UpdateForm {
+    width: 350px;
+    margin-top: -14px;
+    margin-left: -305px;
+}
+
+.UpdateButton {
+    border: 4px solid rgb(240, 40, 83);
+    color: rgb(189, 30, 64);
+    background-color: transparent;
+    width: 190px;
+    font-size: 15px;
+}
+
+.UpdateLabel {
+    color: rgb(233, 56, 94);
+    font-size: 19px;
+}
+
+.UpdateNavLink {
+    font-size: 25px;
+    color: rgb(123, 224, 219);
+    margin-left: -460px;
+}
+
+.UpdateNavLink {
+    color: rgb(233, 56, 94);
+    margin-top: -250px;
+}
+
+.UpdateNavLink :hover {
+    color: rgb(165, 13, 38);
+}
+
+.SecUpdateForm {
+    width: 350px;
+    margin-top: -210px;
+    margin-left: 250px;
+}
+
+.SecUpdateLabel {
+    color: rgb(233, 56, 94);
+    font-size: 19px;
+}
+
+.SearchHeading {
+    width: 450px;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(233, 56, 94);
+    margin-left: 350px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.SearchForm {
+    width: 250px;
+    margin-left: 450px;
+}
+
+.UpdateTable {
+    width: 580px;
+    font-size: 13px;
+    margin-top: 25px;
+    margin-left: 280px;
+    background-color: rgb(240, 17, 66);
+    border-radius: 10px;
+    border: 4px solid rgb(153, 3, 35);
+    color: rgb(250, 229, 235);
+}

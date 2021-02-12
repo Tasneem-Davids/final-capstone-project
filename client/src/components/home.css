@@ -1,0 +1,47 @@
+* {
+    text-align: center;  
+}
+
+.content-wrapper {
+    width: 100%;
+    margin: 0px;
+}
+
+.content-wrapper img {
+    width: 100%;
+    height: 50%;
+    opacity: 85%;
+    margin-top: -10px;
+}
+
+.text-wrapper {
+    position: relative;
+    margin-top: -550px;
+    margin-left: 600px;
+}
+
+.HomeHeading {
+    width: 800px;
+    font-size: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(19, 39, 83);
+}
+
+.HomeButton {
+    border: 4px solid rgb(48, 110, 243);
+    color: rgb(40, 93, 207);
+    background-color: transparent;
+    font-size: 25px;
+    width: 190px;
+    margin-right: -150px;
+}
+
+.HomeLoginButton {
+    border: 4px solid rgb(48, 110, 243);
+    color: rgb(40, 93, 207);
+    background-color: transparent;
+    font-size: 17px;
+    width: 100px;
+    margin-right: -580px;
+    margin-top: -260px;
+}
