@@ -25,6 +25,14 @@ mongoose.connect(process.env.DB, {useNewUrlParser: true, useUnifiedTopology: tru
     process.exit();
 })
 
+const path = require("path");
+if (process.env.NODE_ENV === "production") {
+app.use(express.static("client/build"));
+app.get("*", (req, res) => {
+res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+});
+}
+
 const PORT = process.env.PORT || 8080//Use port
 
 app.listen(PORT, () => {//Listen on port
