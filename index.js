@@ -20,6 +20,7 @@ app.use(
         mediaSrc: ["'self'"],
         objectSrc: ["'self'"],
         upgradeInsecureRequests: [],
+        styleSrc: ["'self'"]
       },
     })
   );
