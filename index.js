@@ -7,6 +7,7 @@ const mongoose = require('mongoose');
 
 require('dotenv').config();//To enable the use of env files
 
+app.use(express.urlencoded({ extended: true }))
 app.use(express.json())//Middleware
 app.use(cors())
 app.use(logger('dev'))
