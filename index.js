@@ -11,19 +11,10 @@ app.use(express.json())//Middleware
 app.use(cors())
 app.use(logger('dev'))
 app.use(
-    helmet.contentSecurityPolicy({
-      directives: {
-        defaultSrc: ["'self'", "'unsafe-inline'"],
-        scriptSrc: ["'self'", "'unsafe-inline'"],
-        imgSrc: ["'self'", "data:"],
-        frameSrc: ["'self'"],
-        mediaSrc: ["'self'"],
-        objectSrc: ["'self'"],
-        upgradeInsecureRequests: [],
-        styleSrc: ["'self'"]
-      },
-    })
-  );
+  helmet({
+    contentSecurityPolicy: false,
+  })
+);
 
 app.use('/auth', require('./routes/auth.route'))//Import routes
 app.use('/appointments', require('./routes/appointments.route'))
