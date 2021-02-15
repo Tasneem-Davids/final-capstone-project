@@ -13,12 +13,12 @@ app.use(logger('dev'))
 app.use(
     helmet.contentSecurityPolicy({
       directives: {
-        defaultSrc: ["'self'"],
-        scriptSrc: ["'self'"],
+        defaultSrc: ["'self'", "'unsafe-inline'"],
+        scriptSrc: ["'self'", "'unsafe-inline'"],
         imgSrc: ["'self'", "data:"],
         frameSrc: ["'self'"],
         mediaSrc: ["'self'"],
-        objectSrc: ["'none'"],
+        objectSrc: ["'self'"],
         upgradeInsecureRequests: [],
       },
     })
