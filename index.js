@@ -14,13 +14,19 @@ app.use(logger('dev'))
 app.use(
     helmet.contentSecurityPolicy({
       directives: {
-        defaultSrc: ["'self'", "'unsafe-inline'"],
+        defaultSrc: ["'self'"],
         scriptSrc: ["'self'", "'unsafe-inline'"],
-        imgSrc: ["'self'"],
+        imgSrc: ["'self'", "data:"],
         frameSrc: ["'self'"],
         mediaSrc: ["'self'"],
-        objectSrc: ["'self'"],
-        upgradeInsecureRequests: [],
+        objectSrc: ["'none'"],
+        styleSrc: ["'self'", "https: 'unsafe-inline'"],
+        scriptSrcAttr: ["'none'"],
+        frameAncestors: ["'self'"],  
+        frontSrc: ["'self'", "https: 'unsafe-inline'"],
+        blockAllMixedContent,
+        upgradeInsecureRequests,
+        baseUri: ["'self'"],
       },
     })
   );
