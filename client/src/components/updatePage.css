@@ -12,6 +12,10 @@
     margin-top: -10px;
 }
 
+.content-wrapper img :not(.NonOpaque){
+    opacity: 1%;
+}
+
 .text-wrapper {
     position: relative;
     margin-top: -810px;
